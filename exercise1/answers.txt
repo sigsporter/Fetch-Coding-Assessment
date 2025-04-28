@@ -1,0 +1,39 @@
+Question 1: Are there any data quality issues present?
+
+ANSWER:
+The Products Data set has a large number of nulls across 
+most columns. Out of a total of 845552 rows CATEGORY_4 has
+the highest percentage of nulls at 92%. Manufacturer and
+Brand both contain 26.8% nulls. Such a large percentage of
+null values will limit the quality of the insights gained
+from those fields.
+
+The Transaction data set is mostly complete. There are only
+5762 nulls in BARCODE out of 50000 rows of data. The Final 
+Quantity and Final Sale columns are object data types but
+should be float (or some type of numeric). Final Quantity
+contains "zero" instead of 0.00 and Final Sale has 25%
+missing values.
+
+The Users data set has many nulls in Language so that will
+be less effective at providing insights. Birthdate, State,
+and Gender also contain Nulls but at a smaller percentage.
+These could still provide insights. Notably, CREATED_DATE
+and BIRTH_DATE were read in as object data types instead 
+of datetime.
+
+
+Question 2: Are there any fields that are challenging to understand
+ANSWER:
+The Products data set has ambiguously named columns. 
+CATEGORY_1, CATEGORY_2, CATEGORY_3, and CATEGORY_4 do not
+provide much context at surface value. Upon reviewing the
+data set, it appears CATEGORY_1 is the broadest category
+type and CATEGORY_2 through CATEGORY_4 add additional
+context. 
+
+The Transaction data sets have clearly named columns.
+
+The Users data set has a column named ID that would be
+better named USER_ID to avoid confusion with a generic
+row ID.

@@ -1,0 +1,43 @@
+For the reviewer,
+
+The prompt for Exercise 3 requests addressing 4 items which I have numbered below.
+You will see {1}, {2}, {3}, and {4} in places within the email body which are included
+to mark my intention of which sections address each point. They are for your reference
+only. I would not include them in the official message.
+
+{1} Key data quality issues and outstanding questions about the data
+{2} One interesting trend in the data
+{3} Use a finding from part 2 or come up with a new insight
+{4} Request for action: explain what additional help, info, etc. you need to make 
+    sense of the data and resolve any outstanding issues
+
+The email begins below.
+-----------------------
+
+Hi [Product Leader],
+
+My name is Stephen and I have been assigned the task of analyzing the 
+user, transaction, and product data to identify trends and recommend next steps.
+
+{1} I noticed an unexpected issue when analyzing Generation demographics by main product
+cateogry. When constructing the query, the majority of the sales data could not be 
+assigned to a generation. I have concluded there are 17603 User ID values in the 
+Transaction table that do not appear in the user table. {4} I would like to discuss this 
+more in detail with the appropriate team members to identify where there are missing
+ID values. Can you help me identify the appropriate folks to analyze this issue?
+I assume we would need to include members of the Identity team that designed the user
+sign-up pages as well as the Financials team that designed the Transactions interface
+and likely a member of the DBA team.
+
+{2}{3} For the User data that I was able to analyze, I found that Fetch has shown a 13% 
+or better growth in new users year-over-year which is certainly something to celebrate! 
+{3} However, while the company is still gaining new users, the trend has been fewer total 
+users and, therefore, a lower percentage growth. {4} User churn is critical for a company
+like Fetch and analyzing this situation further (perhaps with better User data to identify 
+other trends) will be important over the next fiscal year to ensure we maintain strong 
+growth overall.
+
+Thank you for your time, and please let me know if you have any questions.
+
+Best,
+Stephen
